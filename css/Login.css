@@ -1,0 +1,499 @@
+@font-face {
+  font-family:'PT Sans';
+  src: url('../fonts/PTSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'Exo 2';
+  src: url('../fonts/Exo2-Regular.ttf') format('truetype');
+}
+
+body a{
+transition:0.5s all;
+-webkit-transition:0.5s all;
+-moz-transition:0.5s all;
+-o-transition:0.5s all;
+-ms-transition:0.5s all;
+font-weight:400;
+}
+input[type="button"],input[type="submit"]{
+transition:0.5s all;
+-webkit-transition:0.5s all;
+-moz-transition:0.5s all;
+-o-transition:0.5s all;
+-ms-transition:0.5s all;
+}
+
+/*--/Reset code--*/
+
+
+.pio-right { 
+	flex:1;
+	padding: 4em;
+    background: rgba(15, 16, 15, 0.5);
+ 
+}
+.pio-right span .fa {
+    font-size: 18px;
+    width: 7%;
+	text-align: center;
+    border-right: 1px solid #ddd;
+    color:#FFF;
+}
+.pio-right-h2 h2 {
+    font-size: 29px;
+    font-weight: 500px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Exo 2', sans-serif;
+}
+.pio-name,
+.pio-email,
+.pio-psw,
+.pio-cpsw{
+	background: rgba(15, 16, 15, 0.3);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    width: 80%;
+	height:20%;
+    margin:	auto;
+    padding: 20px 20px 20px 20px;
+    letter-spacing: 1px;
+	box-sizing:border-box;
+	border: none;
+    outline: none;
+    background: ;
+    color: #1b1a1a;
+	font-family: 'PT Sans', sans-serif;
+}
+
+select.form-control{
+	outline: none;
+    font-size: 0.9em;
+    padding: 20px 0px 10px 20px;
+    width: 85%;
+	margin:	auto;
+    
+	box-sizing:border-box;
+	border: 1px solid #ddd;
+	background: rgba(0, 0, 0, 0.24);
+    color: #fff;
+   
+    font-family: 'Roboto', sans-serif;
+}
+select.form-control option{
+	background:#111;
+}
+
+.pio-name input[type="text"],
+.pio-name input[type="date"],
+.pio-email input[type="email"],
+.pio-psw input[type="password"],
+.pio-cpsw input[type="password"]{
+	letter-spacing: 2px;
+	border: 1px solid #ddd;
+	border-radius:2px;
+	background: rgba(5, 16, 9, 0.3);
+	color:#fff;
+	margin-top:20px;
+	padding: 25px 20px 20px 25px;
+    outline: none;
+	width: 85%;
+	font-size:15px;
+	font-family: 'PT Sans', sans-serif;
+}
+.pio-agree {
+    text-align: center;
+}
+.pio-agree p{
+	display: inline-block;
+}
+.pio-submit input[type="submit"] {
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: capitalize;
+    padding: 8px;
+    width: 40%;
+    margin:auto ;
+	letter-spacing: 2px;
+    border: 1px solid #fff;
+    border-radius: 2em;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    display: block;
+	font-family: 'PT Sans', sans-serif;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+}
+.pio-submit input[type="submit"]:hover {
+    background:	rgba(9, 235, 156, 0.44);  
+    color: #fff;
+	transition: 0.5s ease-in;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.pio-social a {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 4px;
+    width: 55%;
+    margin: 18px auto;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid #ddd;
+    border-radius: 2em;
+    background: ;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+}
+.pio-social a:hover{
+	transition: 0.5s all;
+	background: transparent;
+	border: 1px solid #ddd;
+	display: block;
+	background: #3b5998;
+
+}
+
+.pio-social i {
+    padding-right: 14px;
+}
+.pio-social.fa{
+	color: #fff;
+}
+.pio-social input[type="submit"]{
+    border: transparent;
+    background: transparent;
+    cursor: auto;
+}
+.pio-agree p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+}
+.pio-p {
+	font-size: 15px;
+	font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    color: #fff;
+	font-family: 'PT Sans', sans-serif;
+}
+.pio-p:before {
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 1px;
+   /* background:rgba(9, 235, 156, 0.44);;*/
+	background:#fff;
+    top: 49%;
+    left: 11%;
+}
+.pio-p:after {
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 1px;
+    /* background:rgba(9, 235, 156, 0.44);;*/
+	background:#fff;
+    top: 49%;
+    left: 83%;
+}
+footer  p{
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	margin-top: 5em;
+	color: #fff;
+	font-family: 'Exo 2', sans-serif;
+}
+footer p a{
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	text-decoration: none;
+	letter-spacing: 3px;
+	color: #efff00;
+	font-family: 'Exo 2', sans-serif;
+}
+footer a:hover{
+	color: #75eb6f;
+}
+
+
+
+/*-------------------Here we have the media screen to make it RESPONSIVE on all screen resolution-------------*/
+
+@media(max-width:1920px){
+	
+}
+@media(max-width:1680){
+	
+}
+@media(max-width:1600px)
+}
+
+@media(max-width:1440px){
+	
+}
+@media(max-width:1366px){
+	
+}
+@media(max-width:1280px){
+	
+}
+@media(max-width:1080px){
+	
+}
+@media(max-width:1050px){
+	.pio-p:before {
+		left: 5%;
+	}
+	.pio-p:after{
+		left: 75%;
+	}
+	.pio-social a {
+		width: 60%;
+	}
+}
+@media(max-width:1024px){
+	footer p {
+		letter-spacing: 2px;
+		margin-top: 2em;
+	}
+	.pio-p:before {
+		left: 4%;
+	}
+}
+@media(max-width:991px){
+	.pio-submit input[type="submit"]{
+		width: 65%;
+	}
+	.pio-social a {
+		width: 65%;
+	}
+	.pio-p:before{
+		left: 3%;
+	}
+	footer p{
+		letter-spacing: 2px;
+	}
+}
+@media(max-width:900px){
+	.pio-submit input[type="submit"]{
+		width: 75%;
+	}
+	.pio-p:before{
+		width: 20%;
+	}
+	.pio-p:before {
+		left: 3%;
+	}
+	.pio-p:after{
+		width: 20%;
+	}
+	.pio-p:after {
+    left: 77%;
+	}
+	.pio-social a {
+		width: 75%;
+	}
+	footer p{
+		font-size: 14px;
+		letter-spacing: 1px;
+		margin-top: 1em;
+	}
+}
+@media(max-width:800px){
+	
+	}
+@media(max-width:768px){
+	.pio-right span .fa {
+		width: 10%;
+	}
+	.pio-name input[type="text"], .pio-email input[type="email"], .pio-psw input[type="password"], .pio-cpsw input[type="password"] {
+		width: 80%;
+	}
+	footer p {
+		margin-top: 2em;
+	}
+	footer p a{
+		font-size: 14px;
+	}
+}
+@media(max-width:736px){
+	.pio-p:before {
+    width: 20%;
+	}
+	.pio-p:before {
+    left: 4%;
+	}
+	.pio-p:after {
+    width: 20%;
+	}
+	.pio-p:after {
+    left: 76%;
+	}
+}
+@media(max-width:667px){
+	
+}
+@media(max-width:640px){
+	
+}
+@media(max-width:600px){
+	footer p a {
+		font-size: 14px;
+	}
+	.pio-p:before {
+		width: 20%;
+	}
+	.pio-p:before {
+		left: 4%;
+	}
+	.pio-p:after {
+		width: 20%;
+	}
+	.pio-p:after {
+		left: 76%;
+	}
+}
+@media(max-width:568px){
+	
+	.pio-p:before {
+		left: 4%;
+	}
+	.pio-p:before {
+		width: 20%;
+	}
+	.pio-p:after {
+		left: 75%;
+	}
+	.pio-p:after {
+		width: 20%;
+	}
+	footer p a {
+		font-size: 14px;
+	}
+}
+@media(max-width:480px){
+	footer p a{
+	font-size: 13px;
+	}
+}
+@media(max-width:414px){
+	.pio-right span .fa {
+		width: 10%;
+	}
+	.pio-name input[type="text"], .pio-email input[type="email"], .pio-psw input[type="password"], .pio-cpsw input[type="password"] {
+		width: 80%;
+	}
+}
+@media(max-width:384px){
+	.pio-right span .fa {
+		width: 10%;
+	}
+	.pio-name input[type="text"], .pio-email input[type="email"], .pio-psw input[type="password"], .pio-cpsw input[type="password"] {
+		width: 80%;
+	}
+	.pio-agree p {
+		font-size: 14px;
+	}
+	.pio-p:before {
+    width: 20%;
+	}
+	.pio-p:before {
+    left: 0%;
+	}
+	.pio-p:after {
+    left: 80%;
+	}
+	.pio-p:after {
+    width: 20%;
+	}
+	.pio-social a {
+    width: 80%;
+	}
+	footer p a {
+		font-size: 14px;
+	}
+}
+@media(max-width:375px){
+	.pio-right span .fa {
+		    width: 9%;
+			text-align: left;
+	}
+	.pio-name input[type="text"], .pio-email input[type="email"], .pio-psw input[type="password"], .pio-cpsw input[type="password"] {
+		width: 85%;
+	}
+	.pio-p:before {
+    left: 0%;
+	}
+	.pio-p:after {
+    left: 80%;
+	}
+}
+@media(max-width:320px){
+	.pio-right span .fa {
+		font-size: 13px;
+		width: 10%;
+	}
+	.pio-name input[type="text"], .pio-email input[type="email"], .pio-psw input[type="password"], .pio-cpsw input[type="password"]{
+		    width: 85%;
+	}
+	.pio-agree p {
+		font-size: 11px;
+		vertical-align: text-top;
+	}
+	.pio-submit input[type="submit"] {
+		font-size: 13px;
+		width: 100%;
+	}
+	.pio-p:before {
+		left: 3px;
+	}
+	.pio-p:before {
+		width: 10%;
+	}
+	.pio-p:after {
+		left: 87%;
+	}
+	.pio-p:after {
+		width: 10%;
+	}
+	.pio-social a {
+		font-size: 13px;
+		width: 95%;
+	}
+}
+/*--/responsive--*/
+
+    
